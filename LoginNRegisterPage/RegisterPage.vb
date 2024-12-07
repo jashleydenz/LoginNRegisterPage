@@ -216,7 +216,7 @@ Public Class RegisterPage
             cmd.CommandText = "INSERT INTO users(Email,`Password`,`TypeOfAccount`) VALUES ('" & txtEmail2.Text & "','" & txtPassword2.Text & "','" & cbxAdminUser1.SelectedItem & "')"
             cmd.ExecuteNonQuery()
             MessageBox.Show("Registered Successfully")
-            con.Close()
+            LoginPage.Show()
             txtName1.Clear()
             txtEmail2.Clear()
             txtPassword2.Clear()

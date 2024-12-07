@@ -135,8 +135,8 @@ Public Class AdminDashboard
         LoginPage.Show()
         Me.Close()
     End Sub
-    Private Sub btnManageBooks1_Click(sender As Object, e As EventArgs) Handles btnManageBooks1.Click
-        FormManageBooks.Show()
-        Me.Hide()
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
     End Sub
 End Class
