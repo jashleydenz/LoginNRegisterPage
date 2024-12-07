@@ -210,22 +210,53 @@ Public Class RegisterPage
     End Sub
 
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
-        con.Open()
+        ' Ensure the connection is open before performing database operations
+        If con.State = ConnectionState.Closed Then
+            con.Open()
+        End If
+
         Try
+            ' Validate inputs before executing the query
+            If String.IsNullOrWhiteSpace(txtEmail2.Text) OrElse
+               String.IsNullOrWhiteSpace(txtPassword2.Text) Then
+
+                MessageBox.Show("Please fill in all required fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                con.Close()
+                Exit Sub
+            End If
+
+            ' Use parameters to avoid SQL injection
             cmd.Connection = con
-            cmd.CommandText = "INSERT INTO users(Email,`Password`,`TypeOfAccount`) VALUES ('" & txtEmail2.Text & "','" & txtPassword2.Text & "','" & cbxAdminUser1.SelectedItem & "')"
+            cmd.CommandText = "INSERT INTO users (Email, `Password`, `TypeOfAccount`) VALUES (@Email, @Password, @AccountType)"
+            cmd.Parameters.Clear()
+            cmd.Parameters.AddWithValue("@Email", txtEmail2.Text)
+            cmd.Parameters.AddWithValue("@Password", txtPassword2.Text)
+            cmd.Parameters.AddWithValue("@AccountType", "User") ' Default to User
+
+            ' Execute the query
             cmd.ExecuteNonQuery()
-            MessageBox.Show("Registered Successfully")
-            con.Close()
+
+            ' Success message
+            MessageBox.Show("Registered Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            ' Clear the fields
             txtName1.Clear()
             txtEmail2.Clear()
             txtPassword2.Clear()
             txtConPassword1.Clear()
         Catch ex As Exception
-            MsgBox(ex.ToString)
+            ' Handle any errors
+            MessageBox.Show("An error occurred: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            ' Ensure the connection is closed
+            con.Close()
         End Try
 
-        WelcomeStart.Show()
+        ' Navigate to the welcome form
+        LoginPage.Show()
         Me.Hide()
     End Sub
+
+
+
 End Class

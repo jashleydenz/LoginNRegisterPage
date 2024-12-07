@@ -143,6 +143,7 @@
     <Compile Include="AdminDashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Book.vb" />
     <Compile Include="FormManageBooks.Designer.vb">
       <DependentUpon>FormManageBooks.vb</DependentUpon>
     </Compile>

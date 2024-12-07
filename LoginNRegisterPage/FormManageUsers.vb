@@ -51,9 +51,9 @@ Public Class FormManageUsers
         AddHandler Panel1.MouseMove, AddressOf Panel_MouseMove
         AddHandler Panel1.MouseUp, AddressOf Panel_MouseUp
 
-        AddHandler Panel2.MouseDown, AddressOf Panel_MouseDown
-        AddHandler Panel2.MouseMove, AddressOf Panel_MouseMove
-        AddHandler Panel2.MouseUp, AddressOf Panel_MouseUp
+        AddHandler Guna2GradientPanel1.MouseDown, AddressOf Panel_MouseDown
+        AddHandler Guna2GradientPanel1.MouseMove, AddressOf Panel_MouseMove
+        AddHandler Guna2GradientPanel1.MouseUp, AddressOf Panel_MouseUp
     End Sub
 
     Private Sub CloseWindow1_Click(sender As Object, e As EventArgs)
@@ -128,18 +128,16 @@ Public Class FormManageUsers
             Me.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Me.Width, Me.Height, radius, radius))
         End If
     End Sub
-
-    Private Sub BackWindow1_Click(sender As Object, e As EventArgs) Handles BackWindow1.Click
-        AdminDashboard.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub BackWindow1_MouseEnter(sender As Object, e As EventArgs) Handles BackWindow1.MouseEnter
+    Private Sub BackWindow1_MouseEnter(sender As Object, e As EventArgs)
         BackWindow1.Cursor = Cursors.Hand
     End Sub
 
     ' Revert the cursor to default when the mouse leaves the control
-    Private Sub BackWindow1_MouseLeave(sender As Object, e As EventArgs) Handles BackWindow1.MouseLeave
+    Private Sub BackWindow1_MouseLeave(sender As Object, e As EventArgs)
         BackWindow1.Cursor = Cursors.Default
+    End Sub
+    Private Sub BackWindow1_Click_1(sender As Object, e As EventArgs) Handles BackWindow1.Click
+        AdminDashboard.Show()
+        Me.Close()
     End Sub
 End Class

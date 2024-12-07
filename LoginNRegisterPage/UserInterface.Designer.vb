@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class UserInterface
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,41 +20,65 @@ Partial Class UserInterface
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MinimizedWindow3 = New System.Windows.Forms.PictureBox()
         Me.MaximizeWindow3 = New System.Windows.Forms.PictureBox()
         Me.CloseWindow3 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.ProfilePictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.NotifBellBox1 = New System.Windows.Forms.PictureBox()
+        Me.SearchPicture1 = New System.Windows.Forms.PictureBox()
+        Me.txtSearch1 = New System.Windows.Forms.TextBox()
+        Me.lblNewReleases1 = New System.Windows.Forms.Label()
+        Me.lblBorrowingofBooks1 = New System.Windows.Forms.Label()
+        Me.lblBooks1 = New System.Windows.Forms.Label()
+        Me.flpBookCovers = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Guna2GradientPanel2 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.DetailsPanel = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.rtbDescription = New System.Windows.Forms.RichTextBox()
+        Me.BackWindow1 = New System.Windows.Forms.PictureBox()
+        Me.dtpReleaseDate = New System.Windows.Forms.Label()
+        Me.cmbStatus = New System.Windows.Forms.Label()
+        Me.txtGenre = New System.Windows.Forms.Label()
+        Me.txtAuthor = New System.Windows.Forms.Label()
+        Me.txtBookTitle = New System.Windows.Forms.Label()
+        Me.pbBookCover1 = New System.Windows.Forms.PictureBox()
+        Me.ChapterContentPanel = New System.Windows.Forms.Panel()
+        Me.lblChapterTitle = New System.Windows.Forms.Label()
+        Me.rtbChapterContentDisplay = New System.Windows.Forms.RichTextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.MinimizedWindow3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MaximizeWindow3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CloseWindow3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
+        Me.Guna2GradientPanel1.SuspendLayout()
+        CType(Me.ProfilePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NotifBellBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SearchPicture1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.flpBookCovers.SuspendLayout()
+        Me.Guna2GradientPanel2.SuspendLayout()
+        Me.DetailsPanel.SuspendLayout()
+        CType(Me.BackWindow1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbBookCover1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ChapterContentPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.Sienna
         Me.Panel1.Controls.Add(Me.MinimizedWindow3)
         Me.Panel1.Controls.Add(Me.MaximizeWindow3)
         Me.Panel1.Controls.Add(Me.CloseWindow3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1649, 58)
+        Me.Panel1.Size = New System.Drawing.Size(1649, 52)
         Me.Panel1.TabIndex = 0
         '
         'MinimizedWindow3
@@ -90,108 +114,314 @@ Partial Class UserInterface
         Me.CloseWindow3.TabIndex = 2
         Me.CloseWindow3.TabStop = False
         '
-        'Label1
+        'Guna2GradientPanel1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(65, 45)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 26)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Books"
+        Me.Guna2GradientPanel1.Controls.Add(Me.ProfilePictureBox1)
+        Me.Guna2GradientPanel1.Controls.Add(Me.NotifBellBox1)
+        Me.Guna2GradientPanel1.Controls.Add(Me.SearchPicture1)
+        Me.Guna2GradientPanel1.Controls.Add(Me.txtSearch1)
+        Me.Guna2GradientPanel1.Controls.Add(Me.lblNewReleases1)
+        Me.Guna2GradientPanel1.Controls.Add(Me.lblBorrowingofBooks1)
+        Me.Guna2GradientPanel1.Controls.Add(Me.lblBooks1)
+        Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(78, Byte), Integer), CType(CType(119, Byte), Integer))
+        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 52)
+        Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
+        Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
+        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1649, 113)
+        Me.Guna2GradientPanel1.TabIndex = 1
+        '
+        'ProfilePictureBox1
+        '
+        Me.ProfilePictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ProfilePictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.ProfilePictureBox1.Image = Global.LoginNRegisterPage.My.Resources.Resources.UserProfile
+        Me.ProfilePictureBox1.Location = New System.Drawing.Point(1575, 38)
+        Me.ProfilePictureBox1.Name = "ProfilePictureBox1"
+        Me.ProfilePictureBox1.Size = New System.Drawing.Size(53, 47)
+        Me.ProfilePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.ProfilePictureBox1.TabIndex = 15
+        Me.ProfilePictureBox1.TabStop = False
+        '
+        'NotifBellBox1
+        '
+        Me.NotifBellBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.NotifBellBox1.BackColor = System.Drawing.Color.Transparent
+        Me.NotifBellBox1.Image = Global.LoginNRegisterPage.My.Resources.Resources.NotificationBell
+        Me.NotifBellBox1.Location = New System.Drawing.Point(1282, 42)
+        Me.NotifBellBox1.Name = "NotifBellBox1"
+        Me.NotifBellBox1.Size = New System.Drawing.Size(48, 43)
+        Me.NotifBellBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.NotifBellBox1.TabIndex = 14
+        Me.NotifBellBox1.TabStop = False
+        '
+        'SearchPicture1
+        '
+        Me.SearchPicture1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SearchPicture1.Image = Global.LoginNRegisterPage.My.Resources.Resources.SearchBar
+        Me.SearchPicture1.Location = New System.Drawing.Point(1530, 51)
+        Me.SearchPicture1.Name = "SearchPicture1"
+        Me.SearchPicture1.Size = New System.Drawing.Size(28, 26)
+        Me.SearchPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.SearchPicture1.TabIndex = 13
+        Me.SearchPicture1.TabStop = False
+        '
+        'txtSearch1
+        '
+        Me.txtSearch1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtSearch1.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSearch1.Location = New System.Drawing.Point(1336, 47)
+        Me.txtSearch1.Name = "txtSearch1"
+        Me.txtSearch1.Size = New System.Drawing.Size(222, 34)
+        Me.txtSearch1.TabIndex = 12
+        '
+        'lblNewReleases1
+        '
+        Me.lblNewReleases1.AutoSize = True
+        Me.lblNewReleases1.BackColor = System.Drawing.Color.Transparent
+        Me.lblNewReleases1.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNewReleases1.Location = New System.Drawing.Point(478, 50)
+        Me.lblNewReleases1.Name = "lblNewReleases1"
+        Me.lblNewReleases1.Size = New System.Drawing.Size(160, 26)
+        Me.lblNewReleases1.TabIndex = 11
+        Me.lblNewReleases1.Text = "New Releases"
+        '
+        'lblBorrowingofBooks1
+        '
+        Me.lblBorrowingofBooks1.AutoSize = True
+        Me.lblBorrowingofBooks1.BackColor = System.Drawing.Color.Transparent
+        Me.lblBorrowingofBooks1.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBorrowingofBooks1.Location = New System.Drawing.Point(218, 50)
+        Me.lblBorrowingofBooks1.Name = "lblBorrowingofBooks1"
+        Me.lblBorrowingofBooks1.Size = New System.Drawing.Size(209, 26)
+        Me.lblBorrowingofBooks1.TabIndex = 10
+        Me.lblBorrowingofBooks1.Text = "Borrowing of Books"
+        '
+        'lblBooks1
+        '
+        Me.lblBooks1.AutoSize = True
+        Me.lblBooks1.BackColor = System.Drawing.Color.Transparent
+        Me.lblBooks1.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBooks1.Location = New System.Drawing.Point(99, 50)
+        Me.lblBooks1.Name = "lblBooks1"
+        Me.lblBooks1.Size = New System.Drawing.Size(76, 26)
+        Me.lblBooks1.TabIndex = 9
+        Me.lblBooks1.Text = "Books"
+        '
+        'flpBookCovers
+        '
+        Me.flpBookCovers.Controls.Add(Me.FlowLayoutPanel1)
+        Me.flpBookCovers.Controls.Add(Me.Guna2GradientPanel2)
+        Me.flpBookCovers.Cursor = System.Windows.Forms.Cursors.Default
+        Me.flpBookCovers.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.flpBookCovers.FillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.flpBookCovers.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(78, Byte), Integer), CType(CType(119, Byte), Integer))
+        Me.flpBookCovers.Location = New System.Drawing.Point(0, 165)
+        Me.flpBookCovers.Name = "flpBookCovers"
+        Me.flpBookCovers.ShadowDecoration.Parent = Me.flpBookCovers
+        Me.flpBookCovers.Size = New System.Drawing.Size(1649, 774)
+        Me.flpBookCovers.TabIndex = 2
+        '
+        'FlowLayoutPanel1
+        '
+        Me.FlowLayoutPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.Transparent
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 67)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1649, 707)
+        Me.FlowLayoutPanel1.TabIndex = 0
+        '
+        'Guna2GradientPanel2
+        '
+        Me.Guna2GradientPanel2.Controls.Add(Me.Label2)
+        Me.Guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(78, Byte), Integer), CType(CType(119, Byte), Integer))
+        Me.Guna2GradientPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2GradientPanel2.Name = "Guna2GradientPanel2"
+        Me.Guna2GradientPanel2.ShadowDecoration.Parent = Me.Guna2GradientPanel2
+        Me.Guna2GradientPanel2.Size = New System.Drawing.Size(1649, 67)
+        Me.Guna2GradientPanel2.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(184, 45)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Arial", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(12, 26)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(209, 26)
+        Me.Label2.Size = New System.Drawing.Size(291, 38)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Borrowing of Books"
+        Me.Label2.Text = "Recommendation"
+        '
+        'DetailsPanel
+        '
+        Me.DetailsPanel.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.DetailsPanel.Controls.Add(Me.Label3)
+        Me.DetailsPanel.Controls.Add(Me.ListBox1)
+        Me.DetailsPanel.Controls.Add(Me.Label1)
+        Me.DetailsPanel.Controls.Add(Me.rtbDescription)
+        Me.DetailsPanel.Controls.Add(Me.BackWindow1)
+        Me.DetailsPanel.Controls.Add(Me.dtpReleaseDate)
+        Me.DetailsPanel.Controls.Add(Me.cmbStatus)
+        Me.DetailsPanel.Controls.Add(Me.txtGenre)
+        Me.DetailsPanel.Controls.Add(Me.txtAuthor)
+        Me.DetailsPanel.Controls.Add(Me.txtBookTitle)
+        Me.DetailsPanel.Controls.Add(Me.pbBookCover1)
+        Me.DetailsPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DetailsPanel.Location = New System.Drawing.Point(0, 165)
+        Me.DetailsPanel.Name = "DetailsPanel"
+        Me.DetailsPanel.Size = New System.Drawing.Size(1649, 774)
+        Me.DetailsPanel.TabIndex = 0
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(444, 45)
+        Me.Label3.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(1238, 141)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(160, 26)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "New Releases"
+        Me.Label3.Size = New System.Drawing.Size(96, 21)
+        Me.Label3.TabIndex = 14
+        Me.Label3.Text = "Chapters:"
         '
-        'TextBox1
+        'ListBox1
         '
-        Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(1254, 42)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(222, 34)
-        Me.TextBox1.TabIndex = 5
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 16
+        Me.ListBox1.Location = New System.Drawing.Point(1233, 173)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(240, 324)
+        Me.ListBox1.TabIndex = 13
         '
-        'PictureBox1
+        'Label1
         '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Image = Global.LoginNRegisterPage.My.Resources.Resources.SearchBar
-        Me.PictureBox1.Location = New System.Drawing.Point(1448, 46)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(28, 26)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(661, 471)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(117, 21)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "Description:"
         '
-        'PictureBox2
+        'rtbDescription
         '
-        Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.Image = Global.LoginNRegisterPage.My.Resources.Resources.NotificationBell
-        Me.PictureBox2.Location = New System.Drawing.Point(1214, 43)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(34, 34)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 7
-        Me.PictureBox2.TabStop = False
+        Me.rtbDescription.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtbDescription.Location = New System.Drawing.Point(665, 505)
+        Me.rtbDescription.Name = "rtbDescription"
+        Me.rtbDescription.Size = New System.Drawing.Size(452, 121)
+        Me.rtbDescription.TabIndex = 11
+        Me.rtbDescription.Text = ""
         '
-        'PictureBox3
+        'BackWindow1
         '
-        Me.PictureBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox3.Image = Global.LoginNRegisterPage.My.Resources.Resources.UserProfile
-        Me.PictureBox3.Location = New System.Drawing.Point(1485, 37)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(49, 43)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 8
-        Me.PictureBox3.TabStop = False
+        Me.BackWindow1.BackColor = System.Drawing.Color.Transparent
+        Me.BackWindow1.Image = Global.LoginNRegisterPage.My.Resources.Resources.BackWindow
+        Me.BackWindow1.Location = New System.Drawing.Point(4, 5)
+        Me.BackWindow1.Name = "BackWindow1"
+        Me.BackWindow1.Size = New System.Drawing.Size(66, 62)
+        Me.BackWindow1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BackWindow1.TabIndex = 10
+        Me.BackWindow1.TabStop = False
         '
-        'Panel2
+        'dtpReleaseDate
         '
-        Me.Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel2.Controls.Add(Me.PictureBox3)
-        Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Controls.Add(Me.PictureBox1)
-        Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Location = New System.Drawing.Point(0, 58)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1649, 881)
-        Me.Panel2.TabIndex = 1
+        Me.dtpReleaseDate.AutoSize = True
+        Me.dtpReleaseDate.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpReleaseDate.Location = New System.Drawing.Point(662, 404)
+        Me.dtpReleaseDate.Name = "dtpReleaseDate"
+        Me.dtpReleaseDate.Size = New System.Drawing.Size(68, 21)
+        Me.dtpReleaseDate.TabIndex = 5
+        Me.dtpReleaseDate.Text = "Label5"
         '
-        'MySqlCommand1
+        'cmbStatus
         '
-        Me.MySqlCommand1.CacheAge = 0
-        Me.MySqlCommand1.Connection = Nothing
-        Me.MySqlCommand1.EnableCaching = False
-        Me.MySqlCommand1.Transaction = Nothing
+        Me.cmbStatus.AutoSize = True
+        Me.cmbStatus.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbStatus.Location = New System.Drawing.Point(661, 361)
+        Me.cmbStatus.Name = "cmbStatus"
+        Me.cmbStatus.Size = New System.Drawing.Size(68, 21)
+        Me.cmbStatus.TabIndex = 4
+        Me.cmbStatus.Text = "Label4"
+        '
+        'txtGenre
+        '
+        Me.txtGenre.AutoSize = True
+        Me.txtGenre.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGenre.Location = New System.Drawing.Point(662, 314)
+        Me.txtGenre.Name = "txtGenre"
+        Me.txtGenre.Size = New System.Drawing.Size(68, 21)
+        Me.txtGenre.TabIndex = 3
+        Me.txtGenre.Text = "Label3"
+        '
+        'txtAuthor
+        '
+        Me.txtAuthor.AutoSize = True
+        Me.txtAuthor.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAuthor.Location = New System.Drawing.Point(661, 269)
+        Me.txtAuthor.Name = "txtAuthor"
+        Me.txtAuthor.Size = New System.Drawing.Size(68, 21)
+        Me.txtAuthor.TabIndex = 2
+        Me.txtAuthor.Text = "Label2"
+        '
+        'txtBookTitle
+        '
+        Me.txtBookTitle.AutoSize = True
+        Me.txtBookTitle.Font = New System.Drawing.Font("Arial", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBookTitle.Location = New System.Drawing.Point(659, 173)
+        Me.txtBookTitle.Name = "txtBookTitle"
+        Me.txtBookTitle.Size = New System.Drawing.Size(105, 33)
+        Me.txtBookTitle.TabIndex = 1
+        Me.txtBookTitle.Text = "Label1"
+        '
+        'pbBookCover1
+        '
+        Me.pbBookCover1.Location = New System.Drawing.Point(246, 141)
+        Me.pbBookCover1.Name = "pbBookCover1"
+        Me.pbBookCover1.Size = New System.Drawing.Size(353, 485)
+        Me.pbBookCover1.TabIndex = 0
+        Me.pbBookCover1.TabStop = False
+        '
+        'ChapterContentPanel
+        '
+        Me.ChapterContentPanel.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.ChapterContentPanel.Controls.Add(Me.rtbChapterContentDisplay)
+        Me.ChapterContentPanel.Controls.Add(Me.lblChapterTitle)
+        Me.ChapterContentPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ChapterContentPanel.Location = New System.Drawing.Point(0, 165)
+        Me.ChapterContentPanel.Name = "ChapterContentPanel"
+        Me.ChapterContentPanel.Size = New System.Drawing.Size(1649, 774)
+        Me.ChapterContentPanel.TabIndex = 15
+        '
+        'lblChapterTitle
+        '
+        Me.lblChapterTitle.AutoSize = True
+        Me.lblChapterTitle.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblChapterTitle.Location = New System.Drawing.Point(795, 86)
+        Me.lblChapterTitle.Name = "lblChapterTitle"
+        Me.lblChapterTitle.Size = New System.Drawing.Size(72, 24)
+        Me.lblChapterTitle.TabIndex = 0
+        Me.lblChapterTitle.Text = "Label4"
+        '
+        'rtbChapterContentDisplay
+        '
+        Me.rtbChapterContentDisplay.Location = New System.Drawing.Point(47, 142)
+        Me.rtbChapterContentDisplay.Name = "rtbChapterContentDisplay"
+        Me.rtbChapterContentDisplay.Size = New System.Drawing.Size(1413, 511)
+        Me.rtbChapterContentDisplay.TabIndex = 1
+        Me.rtbChapterContentDisplay.Text = ""
         '
         'UserInterface
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1649, 939)
-        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.ChapterContentPanel)
+        Me.Controls.Add(Me.DetailsPanel)
+        Me.Controls.Add(Me.flpBookCovers)
+        Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "UserInterface"
@@ -201,11 +431,20 @@ Partial Class UserInterface
         CType(Me.MinimizedWindow3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MaximizeWindow3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CloseWindow3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
+        Me.Guna2GradientPanel1.ResumeLayout(False)
+        Me.Guna2GradientPanel1.PerformLayout()
+        CType(Me.ProfilePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NotifBellBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SearchPicture1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.flpBookCovers.ResumeLayout(False)
+        Me.Guna2GradientPanel2.ResumeLayout(False)
+        Me.Guna2GradientPanel2.PerformLayout()
+        Me.DetailsPanel.ResumeLayout(False)
+        Me.DetailsPanel.PerformLayout()
+        CType(Me.BackWindow1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbBookCover1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ChapterContentPanel.ResumeLayout(False)
+        Me.ChapterContentPanel.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -214,13 +453,31 @@ Partial Class UserInterface
     Friend WithEvents CloseWindow3 As PictureBox
     Friend WithEvents MaximizeWindow3 As PictureBox
     Friend WithEvents MinimizedWindow3 As PictureBox
+    Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents ProfilePictureBox1 As PictureBox
+    Friend WithEvents NotifBellBox1 As PictureBox
+    Friend WithEvents SearchPicture1 As PictureBox
+    Friend WithEvents txtSearch1 As TextBox
+    Friend WithEvents lblNewReleases1 As Label
+    Friend WithEvents lblBorrowingofBooks1 As Label
+    Friend WithEvents lblBooks1 As Label
+    Friend WithEvents flpBookCovers As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents DetailsPanel As Panel
+    Friend WithEvents dtpReleaseDate As Label
+    Friend WithEvents cmbStatus As Label
+    Friend WithEvents txtGenre As Label
+    Friend WithEvents txtAuthor As Label
+    Friend WithEvents txtBookTitle As Label
+    Friend WithEvents pbBookCover1 As PictureBox
+    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
+    Friend WithEvents BackWindow1 As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents rtbDescription As RichTextBox
+    Friend WithEvents Guna2GradientPanel2 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents MySqlCommand1 As MySql.Data.MySqlClient.MySqlCommand
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents ChapterContentPanel As Panel
+    Friend WithEvents lblChapterTitle As Label
+    Friend WithEvents rtbChapterContentDisplay As RichTextBox
 End Class

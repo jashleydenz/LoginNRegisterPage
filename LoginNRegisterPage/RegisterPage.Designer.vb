@@ -30,7 +30,6 @@ Partial Class RegisterPage
         Me.txtPassword2 = New System.Windows.Forms.TextBox()
         Me.txtConPassword1 = New System.Windows.Forms.TextBox()
         Me.chkShow2 = New System.Windows.Forms.CheckBox()
-        Me.cbxAdminUser1 = New System.Windows.Forms.ComboBox()
         Me.txtEmail2 = New System.Windows.Forms.TextBox()
         Me.btnRegister = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -133,19 +132,6 @@ Partial Class RegisterPage
         Me.chkShow2.Text = "Show password"
         Me.chkShow2.UseVisualStyleBackColor = True
         '
-        'cbxAdminUser1
-        '
-        Me.cbxAdminUser1.BackColor = System.Drawing.Color.Gainsboro
-        Me.cbxAdminUser1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxAdminUser1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cbxAdminUser1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxAdminUser1.FormattingEnabled = True
-        Me.cbxAdminUser1.Items.AddRange(New Object() {"User", "Admin"})
-        Me.cbxAdminUser1.Location = New System.Drawing.Point(71, 385)
-        Me.cbxAdminUser1.Name = "cbxAdminUser1"
-        Me.cbxAdminUser1.Size = New System.Drawing.Size(355, 27)
-        Me.cbxAdminUser1.TabIndex = 9
-        '
         'txtEmail2
         '
         Me.txtEmail2.BackColor = System.Drawing.Color.Gainsboro
@@ -166,7 +152,7 @@ Partial Class RegisterPage
         Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegister.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.Color.Maroon
-        Me.btnRegister.Location = New System.Drawing.Point(72, 455)
+        Me.btnRegister.Location = New System.Drawing.Point(72, 390)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(354, 43)
         Me.btnRegister.TabIndex = 11
@@ -178,7 +164,7 @@ Partial Class RegisterPage
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(106, 527)
+        Me.Label1.Location = New System.Drawing.Point(106, 462)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(174, 17)
         Me.Label1.TabIndex = 12
@@ -189,7 +175,7 @@ Partial Class RegisterPage
         Me.lblLoginNow.AutoSize = True
         Me.lblLoginNow.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLoginNow.ForeColor = System.Drawing.Color.Maroon
-        Me.lblLoginNow.Location = New System.Drawing.Point(299, 527)
+        Me.lblLoginNow.Location = New System.Drawing.Point(299, 462)
         Me.lblLoginNow.Name = "lblLoginNow"
         Me.lblLoginNow.Size = New System.Drawing.Size(69, 17)
         Me.lblLoginNow.TabIndex = 13
@@ -200,12 +186,11 @@ Partial Class RegisterPage
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(496, 584)
+        Me.ClientSize = New System.Drawing.Size(496, 538)
         Me.Controls.Add(Me.lblLoginNow)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.txtEmail2)
-        Me.Controls.Add(Me.cbxAdminUser1)
         Me.Controls.Add(Me.chkShow2)
         Me.Controls.Add(Me.txtConPassword1)
         Me.Controls.Add(Me.txtPassword2)
@@ -232,7 +217,6 @@ Partial Class RegisterPage
     Friend WithEvents txtPassword2 As TextBox
     Friend WithEvents txtConPassword1 As TextBox
     Friend WithEvents chkShow2 As CheckBox
-    Friend WithEvents cbxAdminUser1 As ComboBox
     Friend WithEvents txtEmail2 As TextBox
     Friend WithEvents btnRegister As Button
     Friend WithEvents Label1 As Label

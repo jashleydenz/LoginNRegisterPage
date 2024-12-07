@@ -46,9 +46,9 @@ Public Class WelcomeStart
         AddHandler Panel1.MouseMove, AddressOf Panel_MouseMove
         AddHandler Panel1.MouseUp, AddressOf Panel_MouseUp
 
-        AddHandler Panel2.MouseDown, AddressOf Panel_MouseDown
-        AddHandler Panel2.MouseMove, AddressOf Panel_MouseMove
-        AddHandler Panel2.MouseUp, AddressOf Panel_MouseUp
+        AddHandler Guna2GradientPanel1.MouseDown, AddressOf Panel_MouseDown
+        AddHandler Guna2GradientPanel1.MouseMove, AddressOf Panel_MouseMove
+        AddHandler Guna2GradientPanel1.MouseUp, AddressOf Panel_MouseUp
     End Sub
 
     Private Sub CloseWindow1_Click(sender As Object, e As EventArgs)
@@ -105,8 +105,7 @@ Public Class WelcomeStart
     Private Sub Panel_MouseUp(sender As Object, e As MouseEventArgs) Handles MyBase.MouseUp
         drag = False
     End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         LoginPage.Show()
         Me.Hide()
     End Sub
