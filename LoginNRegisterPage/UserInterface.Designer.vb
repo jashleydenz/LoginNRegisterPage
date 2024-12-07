@@ -51,8 +51,8 @@ Partial Class UserInterface
         Me.txtBookTitle = New System.Windows.Forms.Label()
         Me.pbBookCover1 = New System.Windows.Forms.PictureBox()
         Me.ChapterContentPanel = New System.Windows.Forms.Panel()
-        Me.lblChapterTitle = New System.Windows.Forms.Label()
         Me.rtbChapterContentDisplay = New System.Windows.Forms.RichTextBox()
+        Me.lblChapterTitle = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.MinimizedWindow3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MaximizeWindow3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,7 +71,7 @@ Partial Class UserInterface
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Sienna
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Panel1.Controls.Add(Me.MinimizedWindow3)
         Me.Panel1.Controls.Add(Me.MaximizeWindow3)
         Me.Panel1.Controls.Add(Me.CloseWindow3)
@@ -116,6 +116,7 @@ Partial Class UserInterface
         '
         'Guna2GradientPanel1
         '
+        Me.Guna2GradientPanel1.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Guna2GradientPanel1.Controls.Add(Me.ProfilePictureBox1)
         Me.Guna2GradientPanel1.Controls.Add(Me.NotifBellBox1)
         Me.Guna2GradientPanel1.Controls.Add(Me.SearchPicture1)
@@ -124,8 +125,9 @@ Partial Class UserInterface
         Me.Guna2GradientPanel1.Controls.Add(Me.lblBorrowingofBooks1)
         Me.Guna2GradientPanel1.Controls.Add(Me.lblBooks1)
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(78, Byte), Integer), CType(CType(119, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(164, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.PowderBlue
+        Me.Guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 52)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
@@ -137,7 +139,7 @@ Partial Class UserInterface
         Me.ProfilePictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ProfilePictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.ProfilePictureBox1.Image = Global.LoginNRegisterPage.My.Resources.Resources.UserProfile
-        Me.ProfilePictureBox1.Location = New System.Drawing.Point(1575, 38)
+        Me.ProfilePictureBox1.Location = New System.Drawing.Point(1578, 38)
         Me.ProfilePictureBox1.Name = "ProfilePictureBox1"
         Me.ProfilePictureBox1.Size = New System.Drawing.Size(53, 47)
         Me.ProfilePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -149,7 +151,7 @@ Partial Class UserInterface
         Me.NotifBellBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.NotifBellBox1.BackColor = System.Drawing.Color.Transparent
         Me.NotifBellBox1.Image = Global.LoginNRegisterPage.My.Resources.Resources.NotificationBell
-        Me.NotifBellBox1.Location = New System.Drawing.Point(1282, 42)
+        Me.NotifBellBox1.Location = New System.Drawing.Point(1276, 40)
         Me.NotifBellBox1.Name = "NotifBellBox1"
         Me.NotifBellBox1.Size = New System.Drawing.Size(48, 43)
         Me.NotifBellBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -159,8 +161,9 @@ Partial Class UserInterface
         'SearchPicture1
         '
         Me.SearchPicture1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SearchPicture1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.SearchPicture1.Image = Global.LoginNRegisterPage.My.Resources.Resources.SearchBar
-        Me.SearchPicture1.Location = New System.Drawing.Point(1530, 51)
+        Me.SearchPicture1.Location = New System.Drawing.Point(1530, 48)
         Me.SearchPicture1.Name = "SearchPicture1"
         Me.SearchPicture1.Size = New System.Drawing.Size(28, 26)
         Me.SearchPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -171,7 +174,7 @@ Partial Class UserInterface
         '
         Me.txtSearch1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSearch1.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch1.Location = New System.Drawing.Point(1336, 47)
+        Me.txtSearch1.Location = New System.Drawing.Point(1338, 44)
         Me.txtSearch1.Name = "txtSearch1"
         Me.txtSearch1.Size = New System.Drawing.Size(222, 34)
         Me.txtSearch1.TabIndex = 12
@@ -180,10 +183,11 @@ Partial Class UserInterface
         '
         Me.lblNewReleases1.AutoSize = True
         Me.lblNewReleases1.BackColor = System.Drawing.Color.Transparent
-        Me.lblNewReleases1.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNewReleases1.Location = New System.Drawing.Point(478, 50)
+        Me.lblNewReleases1.Font = New System.Drawing.Font("Baskerville Old Face", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNewReleases1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblNewReleases1.Location = New System.Drawing.Point(571, 45)
         Me.lblNewReleases1.Name = "lblNewReleases1"
-        Me.lblNewReleases1.Size = New System.Drawing.Size(160, 26)
+        Me.lblNewReleases1.Size = New System.Drawing.Size(234, 43)
         Me.lblNewReleases1.TabIndex = 11
         Me.lblNewReleases1.Text = "New Releases"
         '
@@ -191,10 +195,11 @@ Partial Class UserInterface
         '
         Me.lblBorrowingofBooks1.AutoSize = True
         Me.lblBorrowingofBooks1.BackColor = System.Drawing.Color.Transparent
-        Me.lblBorrowingofBooks1.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBorrowingofBooks1.Location = New System.Drawing.Point(218, 50)
+        Me.lblBorrowingofBooks1.Font = New System.Drawing.Font("Baskerville Old Face", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBorrowingofBooks1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblBorrowingofBooks1.Location = New System.Drawing.Point(198, 45)
         Me.lblBorrowingofBooks1.Name = "lblBorrowingofBooks1"
-        Me.lblBorrowingofBooks1.Size = New System.Drawing.Size(209, 26)
+        Me.lblBorrowingofBooks1.Size = New System.Drawing.Size(333, 43)
         Me.lblBorrowingofBooks1.TabIndex = 10
         Me.lblBorrowingofBooks1.Text = "Borrowing of Books"
         '
@@ -202,10 +207,11 @@ Partial Class UserInterface
         '
         Me.lblBooks1.AutoSize = True
         Me.lblBooks1.BackColor = System.Drawing.Color.Transparent
-        Me.lblBooks1.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBooks1.Location = New System.Drawing.Point(99, 50)
+        Me.lblBooks1.Font = New System.Drawing.Font("Baskerville Old Face", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBooks1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblBooks1.Location = New System.Drawing.Point(40, 45)
         Me.lblBooks1.Name = "lblBooks1"
-        Me.lblBooks1.Size = New System.Drawing.Size(76, 26)
+        Me.lblBooks1.Size = New System.Drawing.Size(118, 43)
         Me.lblBooks1.TabIndex = 9
         Me.lblBooks1.Text = "Books"
         '
@@ -228,7 +234,7 @@ Partial Class UserInterface
         Me.FlowLayoutPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.Transparent
+        Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(182, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 67)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1649, 707)
@@ -238,8 +244,8 @@ Partial Class UserInterface
         '
         Me.Guna2GradientPanel2.Controls.Add(Me.Label2)
         Me.Guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(78, Byte), Integer), CType(CType(119, Byte), Integer))
+        Me.Guna2GradientPanel2.FillColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Guna2GradientPanel2.FillColor2 = System.Drawing.Color.RoyalBlue
         Me.Guna2GradientPanel2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel2.Name = "Guna2GradientPanel2"
         Me.Guna2GradientPanel2.ShadowDecoration.Parent = Me.Guna2GradientPanel2
@@ -250,10 +256,10 @@ Partial Class UserInterface
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Arial", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 26)
+        Me.Label2.Font = New System.Drawing.Font("Britannic Bold", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(12, 17)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(291, 38)
+        Me.Label2.Size = New System.Drawing.Size(276, 37)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Recommendation"
         '
@@ -386,7 +392,7 @@ Partial Class UserInterface
         '
         'ChapterContentPanel
         '
-        Me.ChapterContentPanel.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.ChapterContentPanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ChapterContentPanel.Controls.Add(Me.rtbChapterContentDisplay)
         Me.ChapterContentPanel.Controls.Add(Me.lblChapterTitle)
         Me.ChapterContentPanel.Dock = System.Windows.Forms.DockStyle.Fill
@@ -394,16 +400,6 @@ Partial Class UserInterface
         Me.ChapterContentPanel.Name = "ChapterContentPanel"
         Me.ChapterContentPanel.Size = New System.Drawing.Size(1649, 774)
         Me.ChapterContentPanel.TabIndex = 15
-        '
-        'lblChapterTitle
-        '
-        Me.lblChapterTitle.AutoSize = True
-        Me.lblChapterTitle.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblChapterTitle.Location = New System.Drawing.Point(795, 86)
-        Me.lblChapterTitle.Name = "lblChapterTitle"
-        Me.lblChapterTitle.Size = New System.Drawing.Size(72, 24)
-        Me.lblChapterTitle.TabIndex = 0
-        Me.lblChapterTitle.Text = "Label4"
         '
         'rtbChapterContentDisplay
         '
@@ -413,14 +409,24 @@ Partial Class UserInterface
         Me.rtbChapterContentDisplay.TabIndex = 1
         Me.rtbChapterContentDisplay.Text = ""
         '
+        'lblChapterTitle
+        '
+        Me.lblChapterTitle.AutoSize = True
+        Me.lblChapterTitle.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblChapterTitle.Location = New System.Drawing.Point(692, 5)
+        Me.lblChapterTitle.Name = "lblChapterTitle"
+        Me.lblChapterTitle.Size = New System.Drawing.Size(72, 24)
+        Me.lblChapterTitle.TabIndex = 0
+        Me.lblChapterTitle.Text = "Label4"
+        '
         'UserInterface
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1649, 939)
+        Me.Controls.Add(Me.flpBookCovers)
         Me.Controls.Add(Me.ChapterContentPanel)
         Me.Controls.Add(Me.DetailsPanel)
-        Me.Controls.Add(Me.flpBookCovers)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

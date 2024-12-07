@@ -53,7 +53,7 @@ Public Class FormManageBooks
 
         ' Set custom form style
         Me.FormBorderStyle = FormBorderStyle.None
-        Dim radius As Integer = 20
+        Dim radius As Integer = 50
         Me.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Me.Width, Me.Height, radius, radius))
         Me.BackColor = Color.White
 
@@ -433,6 +433,10 @@ Public Class FormManageBooks
 
         File.AppendAllLines(chapterPath, New String() {chapterDetails})
         MessageBox.Show("Chapter title and content submitted successfully!")
+    End Sub
+
+    Private Sub rtbChapterContent1_TextChanged(sender As Object, e As EventArgs) Handles rtbChapterContent1.TextChanged
+
     End Sub
 End Class
 

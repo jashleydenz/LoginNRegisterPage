@@ -40,7 +40,7 @@ Partial Class WelcomeStart
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Panel1.Controls.Add(Me.MinimizedWindow3)
         Me.Panel1.Controls.Add(Me.CloseWindow3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -78,8 +78,8 @@ Partial Class WelcomeStart
         Me.Guna2GradientPanel1.Controls.Add(Me.Label1)
         Me.Guna2GradientPanel1.Controls.Add(Me.PictureBox1)
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.CornflowerBlue
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 58)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
@@ -88,13 +88,14 @@ Partial Class WelcomeStart
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Button1.Font = New System.Drawing.Font("Bernard MT Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(851, 410)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(96, 28)
+        Me.Button1.Size = New System.Drawing.Size(124, 49)
         Me.Button1.TabIndex = 7
         Me.Button1.Text = "Next"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -122,7 +123,7 @@ Partial Class WelcomeStart
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.LoginNRegisterPage.My.Resources.Resources.BOBooks_Logo_
-        Me.PictureBox1.Location = New System.Drawing.Point(59, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(44, -3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(373, 518)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage

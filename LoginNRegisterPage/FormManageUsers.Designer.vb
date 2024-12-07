@@ -54,7 +54,7 @@ Partial Class FormManageUsers
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.Panel1.Controls.Add(Me.MinimizedWindow3)
         Me.Panel1.Controls.Add(Me.MaximizeWindow3)
         Me.Panel1.Controls.Add(Me.CloseWindow3)
@@ -116,8 +116,9 @@ Partial Class FormManageUsers
         Me.Guna2GradientPanel1.Controls.Add(Me.Button2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Button3)
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(118, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.Guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 58)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
@@ -141,11 +142,11 @@ Partial Class FormManageUsers
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(161, 127)
+        Me.Label1.Font = New System.Drawing.Font("Colonna MT", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(162, 130)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label1.Size = New System.Drawing.Size(70, 24)
+        Me.Label1.Size = New System.Drawing.Size(94, 30)
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "Name:"
         '
@@ -154,14 +155,15 @@ Partial Class FormManageUsers
         Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.TextBox1.Location = New System.Drawing.Point(161, 161)
+        Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TextBox1.Size = New System.Drawing.Size(265, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(265, 27)
         Me.TextBox1.TabIndex = 18
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Cooper Black", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(161, 204)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(105, 34)
@@ -175,11 +177,12 @@ Partial Class FormManageUsers
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(163, 299)
+        Me.Label2.Font = New System.Drawing.Font("Colonna MT", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label2.Location = New System.Drawing.Point(161, 292)
         Me.Label2.Name = "Label2"
         Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label2.Size = New System.Drawing.Size(88, 19)
+        Me.Label2.Size = New System.Drawing.Size(120, 24)
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Username:"
         '
@@ -189,11 +192,12 @@ Partial Class FormManageUsers
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(165, 357)
+        Me.Label3.Font = New System.Drawing.Font("Colonna MT", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(160, 354)
         Me.Label3.Name = "Label3"
         Me.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label3.Size = New System.Drawing.Size(176, 19)
+        Me.Label3.Size = New System.Drawing.Size(245, 24)
         Me.Label3.TabIndex = 21
         Me.Label3.Text = "Borrowed Book Status:"
         '
@@ -203,11 +207,12 @@ Partial Class FormManageUsers
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(165, 414)
+        Me.Label4.Font = New System.Drawing.Font("Colonna MT", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label4.Location = New System.Drawing.Point(165, 417)
         Me.Label4.Name = "Label4"
         Me.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label4.Size = New System.Drawing.Size(187, 19)
+        Me.Label4.Size = New System.Drawing.Size(269, 24)
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "No# of Books Borrowed:"
         '
@@ -217,11 +222,12 @@ Partial Class FormManageUsers
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(165, 475)
+        Me.Label5.Font = New System.Drawing.Font("Colonna MT", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(165, 482)
         Me.Label5.Name = "Label5"
         Me.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label5.Size = New System.Drawing.Size(84, 19)
+        Me.Label5.Size = New System.Drawing.Size(125, 24)
         Me.Label5.TabIndex = 23
         Me.Label5.Text = "Book Title:"
         '
@@ -229,7 +235,7 @@ Partial Class FormManageUsers
         '
         Me.TextBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.Location = New System.Drawing.Point(163, 321)
+        Me.TextBox2.Location = New System.Drawing.Point(163, 317)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox2.Size = New System.Drawing.Size(265, 22)
@@ -249,7 +255,7 @@ Partial Class FormManageUsers
         '
         Me.TextBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.TextBox4.Location = New System.Drawing.Point(165, 436)
+        Me.TextBox4.Location = New System.Drawing.Point(165, 441)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox4.Size = New System.Drawing.Size(265, 22)
@@ -259,7 +265,7 @@ Partial Class FormManageUsers
         '
         Me.TextBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.TextBox5.Location = New System.Drawing.Point(165, 496)
+        Me.TextBox5.Location = New System.Drawing.Point(165, 507)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox5.Size = New System.Drawing.Size(265, 22)
@@ -284,17 +290,19 @@ Partial Class FormManageUsers
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(561, 98)
+        Me.Label6.Font = New System.Drawing.Font("Algerian", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Label6.Location = New System.Drawing.Point(551, 85)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(130, 27)
+        Me.Label6.Size = New System.Drawing.Size(235, 45)
         Me.Label6.TabIndex = 29
         Me.Label6.Text = "User's List"
         '
         'Button2
         '
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.WindowText
         Me.Button2.Location = New System.Drawing.Point(628, 557)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(212, 37)
@@ -305,7 +313,8 @@ Partial Class FormManageUsers
         'Button3
         '
         Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button3.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.SystemColors.WindowText
         Me.Button3.Location = New System.Drawing.Point(907, 557)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(212, 37)

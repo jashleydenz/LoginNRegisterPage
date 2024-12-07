@@ -42,7 +42,7 @@ Partial Class AdminDashboard
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(96, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(182, Byte), Integer))
         Me.Panel1.Controls.Add(Me.MinimizedWindow2)
         Me.Panel1.Controls.Add(Me.MaximizeWindow2)
         Me.Panel1.Controls.Add(Me.CloseWindow2)
@@ -55,6 +55,7 @@ Partial Class AdminDashboard
         'MinimizedWindow2
         '
         Me.MinimizedWindow2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MinimizedWindow2.BackColor = System.Drawing.Color.Transparent
         Me.MinimizedWindow2.Image = Global.LoginNRegisterPage.My.Resources.Resources.MinimizedWindow
         Me.MinimizedWindow2.Location = New System.Drawing.Point(368, 14)
         Me.MinimizedWindow2.Name = "MinimizedWindow2"
@@ -87,6 +88,7 @@ Partial Class AdminDashboard
         '
         'Panel2
         '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Panel2.Controls.Add(Me.btnLogout1)
         Me.Panel2.Controls.Add(Me.btnLMSDashboard1)
         Me.Panel2.Controls.Add(Me.btnViewRecords1)
@@ -106,7 +108,7 @@ Partial Class AdminDashboard
         Me.btnLogout1.CheckedState.Parent = Me.btnLogout1
         Me.btnLogout1.CustomImages.Parent = Me.btnLogout1
         Me.btnLogout1.FillColor = System.Drawing.Color.Black
-        Me.btnLogout1.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogout1.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout1.ForeColor = System.Drawing.Color.White
         Me.btnLogout1.HoverState.Parent = Me.btnLogout1
         Me.btnLogout1.Location = New System.Drawing.Point(83, 474)
@@ -123,7 +125,7 @@ Partial Class AdminDashboard
         Me.btnLMSDashboard1.CheckedState.Parent = Me.btnLMSDashboard1
         Me.btnLMSDashboard1.CustomImages.Parent = Me.btnLMSDashboard1
         Me.btnLMSDashboard1.FillColor = System.Drawing.Color.Black
-        Me.btnLMSDashboard1.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLMSDashboard1.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLMSDashboard1.ForeColor = System.Drawing.Color.White
         Me.btnLMSDashboard1.HoverState.Parent = Me.btnLMSDashboard1
         Me.btnLMSDashboard1.Location = New System.Drawing.Point(83, 388)
@@ -140,7 +142,7 @@ Partial Class AdminDashboard
         Me.btnViewRecords1.CheckedState.Parent = Me.btnViewRecords1
         Me.btnViewRecords1.CustomImages.Parent = Me.btnViewRecords1
         Me.btnViewRecords1.FillColor = System.Drawing.Color.Black
-        Me.btnViewRecords1.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnViewRecords1.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnViewRecords1.ForeColor = System.Drawing.Color.White
         Me.btnViewRecords1.HoverState.Parent = Me.btnViewRecords1
         Me.btnViewRecords1.Location = New System.Drawing.Point(83, 301)
@@ -157,7 +159,7 @@ Partial Class AdminDashboard
         Me.btnManageBooks1.CheckedState.Parent = Me.btnManageBooks1
         Me.btnManageBooks1.CustomImages.Parent = Me.btnManageBooks1
         Me.btnManageBooks1.FillColor = System.Drawing.Color.Black
-        Me.btnManageBooks1.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnManageBooks1.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnManageBooks1.ForeColor = System.Drawing.Color.White
         Me.btnManageBooks1.HoverState.Parent = Me.btnManageBooks1
         Me.btnManageBooks1.Location = New System.Drawing.Point(83, 216)
@@ -174,7 +176,7 @@ Partial Class AdminDashboard
         Me.btnManageUsers1.CheckedState.Parent = Me.btnManageUsers1
         Me.btnManageUsers1.CustomImages.Parent = Me.btnManageUsers1
         Me.btnManageUsers1.FillColor = System.Drawing.Color.Black
-        Me.btnManageUsers1.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnManageUsers1.Font = New System.Drawing.Font("Tahoma", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnManageUsers1.ForeColor = System.Drawing.Color.White
         Me.btnManageUsers1.HoverState.Parent = Me.btnManageUsers1
         Me.btnManageUsers1.Location = New System.Drawing.Point(83, 130)
@@ -186,8 +188,9 @@ Partial Class AdminDashboard
         '
         'Label1
         '
+        Me.Label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label1.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(496, 84)

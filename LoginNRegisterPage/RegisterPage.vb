@@ -256,7 +256,4 @@ Public Class RegisterPage
         LoginPage.Show()
         Me.Hide()
     End Sub
-
-
-
 End Class

@@ -39,7 +39,7 @@ Partial Class LoginPage
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(93, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Panel1.Controls.Add(Me.MinimizedWindow1)
         Me.Panel1.Controls.Add(Me.CloseWindow1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -71,12 +71,12 @@ Partial Class LoginPage
         'lblLogin
         '
         Me.lblLogin.AutoSize = True
-        Me.lblLogin.Font = New System.Drawing.Font("Arial", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLogin.Location = New System.Drawing.Point(142, 92)
+        Me.lblLogin.Font = New System.Drawing.Font("Bell MT", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogin.Location = New System.Drawing.Point(175, 110)
         Me.lblLogin.Name = "lblLogin"
-        Me.lblLogin.Size = New System.Drawing.Size(208, 38)
+        Me.lblLogin.Size = New System.Drawing.Size(165, 46)
         Me.lblLogin.TabIndex = 0
-        Me.lblLogin.Text = "LOGIN NOW"
+        Me.lblLogin.Text = "LOGIN "
         '
         'txtEmail
         '
@@ -110,7 +110,7 @@ Partial Class LoginPage
         Me.btnLogin.BackColor = System.Drawing.Color.LightCoral
         Me.btnLogin.FlatAppearance.BorderSize = 0
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogin.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.Font = New System.Drawing.Font("Cooper Black", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.Maroon
         Me.btnLogin.Location = New System.Drawing.Point(74, 326)
         Me.btnLogin.Name = "btnLogin"
@@ -123,10 +123,10 @@ Partial Class LoginPage
         'chkShow
         '
         Me.chkShow.AutoSize = True
-        Me.chkShow.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkShow.Font = New System.Drawing.Font("Cooper Black", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkShow.Location = New System.Drawing.Point(293, 273)
         Me.chkShow.Name = "chkShow"
-        Me.chkShow.Size = New System.Drawing.Size(120, 20)
+        Me.chkShow.Size = New System.Drawing.Size(134, 19)
         Me.chkShow.TabIndex = 3
         Me.chkShow.Text = "Show password"
         Me.chkShow.UseVisualStyleBackColor = True
@@ -156,6 +156,7 @@ Partial Class LoginPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.ClientSize = New System.Drawing.Size(496, 477)
         Me.Controls.Add(Me.lblRegisterNow)
         Me.Controls.Add(Me.Label2)

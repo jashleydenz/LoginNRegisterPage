@@ -41,7 +41,7 @@ Partial Class RegisterPage
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(96, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(182, Byte), Integer))
         Me.Panel1.Controls.Add(Me.CloseWindow1)
         Me.Panel1.Controls.Add(Me.MinimizedWindow1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -74,6 +74,7 @@ Partial Class RegisterPage
         '
         Me.lblLogin.AutoSize = True
         Me.lblLogin.Font = New System.Drawing.Font("Arial", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogin.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.lblLogin.Location = New System.Drawing.Point(100, 92)
         Me.lblLogin.Name = "lblLogin"
         Me.lblLogin.Size = New System.Drawing.Size(275, 38)
@@ -124,10 +125,10 @@ Partial Class RegisterPage
         'chkShow2
         '
         Me.chkShow2.AutoSize = True
-        Me.chkShow2.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkShow2.Font = New System.Drawing.Font("Arial Black", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkShow2.Location = New System.Drawing.Point(294, 346)
         Me.chkShow2.Name = "chkShow2"
-        Me.chkShow2.Size = New System.Drawing.Size(120, 20)
+        Me.chkShow2.Size = New System.Drawing.Size(143, 22)
         Me.chkShow2.TabIndex = 8
         Me.chkShow2.Text = "Show password"
         Me.chkShow2.UseVisualStyleBackColor = True
@@ -147,11 +148,11 @@ Partial Class RegisterPage
         '
         'btnRegister
         '
-        Me.btnRegister.BackColor = System.Drawing.Color.LightCoral
+        Me.btnRegister.BackColor = System.Drawing.Color.SteelBlue
         Me.btnRegister.FlatAppearance.BorderSize = 0
         Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRegister.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegister.ForeColor = System.Drawing.Color.Maroon
+        Me.btnRegister.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegister.ForeColor = System.Drawing.Color.Azure
         Me.btnRegister.Location = New System.Drawing.Point(72, 390)
         Me.btnRegister.Name = "btnRegister"
         Me.btnRegister.Size = New System.Drawing.Size(354, 43)
@@ -163,21 +164,22 @@ Partial Class RegisterPage
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(106, 462)
+        Me.Label1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(86, 461)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(174, 17)
+        Me.Label1.Size = New System.Drawing.Size(188, 18)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "already have an account?"
         '
         'lblLoginNow
         '
         Me.lblLoginNow.AutoSize = True
-        Me.lblLoginNow.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLoginNow.ForeColor = System.Drawing.Color.Maroon
-        Me.lblLoginNow.Location = New System.Drawing.Point(299, 462)
+        Me.lblLoginNow.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLoginNow.ForeColor = System.Drawing.Color.Black
+        Me.lblLoginNow.Location = New System.Drawing.Point(299, 461)
         Me.lblLoginNow.Name = "lblLoginNow"
-        Me.lblLoginNow.Size = New System.Drawing.Size(69, 17)
+        Me.lblLoginNow.Size = New System.Drawing.Size(76, 18)
         Me.lblLoginNow.TabIndex = 13
         Me.lblLoginNow.Text = "login now"
         '
@@ -185,7 +187,7 @@ Partial Class RegisterPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.PowderBlue
         Me.ClientSize = New System.Drawing.Size(496, 538)
         Me.Controls.Add(Me.lblLoginNow)
         Me.Controls.Add(Me.Label1)

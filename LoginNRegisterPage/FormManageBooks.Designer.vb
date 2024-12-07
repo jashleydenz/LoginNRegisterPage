@@ -58,8 +58,8 @@ Partial Class FormManageBooks
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.rtbDescription2 = New System.Windows.Forms.RichTextBox()
-        Me.pbPictureCover2 = New System.Windows.Forms.PictureBox()
         Me.btAddImage2 = New System.Windows.Forms.Button()
+        Me.pbPictureCover2 = New System.Windows.Forms.PictureBox()
         Me.lblBookCover2 = New System.Windows.Forms.Label()
         Me.btnDelete1 = New System.Windows.Forms.Button()
         Me.lblNumberOfBooks1 = New System.Windows.Forms.Label()
@@ -90,7 +90,7 @@ Partial Class FormManageBooks
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.Silver
         Me.Panel1.Controls.Add(Me.MinimizedWindow3)
         Me.Panel1.Controls.Add(Me.MaximizeWindow3)
         Me.Panel1.Controls.Add(Me.CloseWindow3)
@@ -158,8 +158,10 @@ Partial Class FormManageBooks
         Me.Guna2GradientPanel1.Controls.Add(Me.lblAuthor1)
         Me.Guna2GradientPanel1.Controls.Add(Me.lblTitle1)
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(114, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(193, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2GradientPanel1.Font = New System.Drawing.Font("Poor Richard", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 140)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
@@ -169,7 +171,7 @@ Partial Class FormManageBooks
         'btnSubmit1
         '
         Me.btnSubmit1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSubmit1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit1.Font = New System.Drawing.Font("Cooper Black", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmit1.Location = New System.Drawing.Point(1145, 399)
         Me.btnSubmit1.Name = "btnSubmit1"
         Me.btnSubmit1.Size = New System.Drawing.Size(127, 33)
@@ -194,10 +196,10 @@ Partial Class FormManageBooks
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblChapterContent1.AutoSize = True
         Me.lblChapterContent1.BackColor = System.Drawing.Color.Transparent
-        Me.lblChapterContent1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblChapterContent1.Location = New System.Drawing.Point(882, 69)
+        Me.lblChapterContent1.Font = New System.Drawing.Font("Book Antiqua", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblChapterContent1.Location = New System.Drawing.Point(883, 68)
         Me.lblChapterContent1.Name = "lblChapterContent1"
-        Me.lblChapterContent1.Size = New System.Drawing.Size(146, 19)
+        Me.lblChapterContent1.Size = New System.Drawing.Size(196, 28)
         Me.lblChapterContent1.TabIndex = 33
         Me.lblChapterContent1.Text = "Chapter Content:"
         '
@@ -207,7 +209,7 @@ Partial Class FormManageBooks
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.rtbChapterContent1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtbChapterContent1.Location = New System.Drawing.Point(886, 97)
+        Me.rtbChapterContent1.Location = New System.Drawing.Point(887, 97)
         Me.rtbChapterContent1.Name = "rtbChapterContent1"
         Me.rtbChapterContent1.Size = New System.Drawing.Size(386, 285)
         Me.rtbChapterContent1.TabIndex = 32
@@ -219,9 +221,10 @@ Partial Class FormManageBooks
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtChapterTitle1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtChapterTitle1.Location = New System.Drawing.Point(1019, 34)
+        Me.txtChapterTitle1.Location = New System.Drawing.Point(1022, 10)
+        Me.txtChapterTitle1.Multiline = True
         Me.txtChapterTitle1.Name = "txtChapterTitle1"
-        Me.txtChapterTitle1.Size = New System.Drawing.Size(253, 25)
+        Me.txtChapterTitle1.Size = New System.Drawing.Size(269, 33)
         Me.txtChapterTitle1.TabIndex = 31
         '
         'lblChapterTitle1
@@ -231,10 +234,10 @@ Partial Class FormManageBooks
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblChapterTitle1.AutoSize = True
         Me.lblChapterTitle1.BackColor = System.Drawing.Color.Transparent
-        Me.lblChapterTitle1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblChapterTitle1.Location = New System.Drawing.Point(882, 37)
+        Me.lblChapterTitle1.Font = New System.Drawing.Font("Book Antiqua", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblChapterTitle1.Location = New System.Drawing.Point(843, 10)
         Me.lblChapterTitle1.Name = "lblChapterTitle1"
-        Me.lblChapterTitle1.Size = New System.Drawing.Size(116, 19)
+        Me.lblChapterTitle1.Size = New System.Drawing.Size(161, 28)
         Me.lblChapterTitle1.TabIndex = 30
         Me.lblChapterTitle1.Text = "Chapter Title:"
         '
@@ -253,10 +256,11 @@ Partial Class FormManageBooks
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblBookDescription1.AutoSize = True
         Me.lblBookDescription1.BackColor = System.Drawing.Color.Transparent
-        Me.lblBookDescription1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBookDescription1.Location = New System.Drawing.Point(585, 37)
+        Me.lblBookDescription1.Font = New System.Drawing.Font("Poor Richard", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBookDescription1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblBookDescription1.Location = New System.Drawing.Point(585, 36)
         Me.lblBookDescription1.Name = "lblBookDescription1"
-        Me.lblBookDescription1.Size = New System.Drawing.Size(151, 19)
+        Me.lblBookDescription1.Size = New System.Drawing.Size(214, 31)
         Me.lblBookDescription1.TabIndex = 28
         Me.lblBookDescription1.Text = "Book Description:"
         '
@@ -283,7 +287,7 @@ Partial Class FormManageBooks
         '
         'btnSave1
         '
-        Me.btnSave1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSave1.Font = New System.Drawing.Font("Cooper Black", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave1.Location = New System.Drawing.Point(71, 438)
         Me.btnSave1.Name = "btnSave1"
         Me.btnSave1.Size = New System.Drawing.Size(197, 44)
@@ -293,7 +297,7 @@ Partial Class FormManageBooks
         '
         'btnAddImage1
         '
-        Me.btnAddImage1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddImage1.Font = New System.Drawing.Font("Cooper Black", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddImage1.Location = New System.Drawing.Point(346, 438)
         Me.btnAddImage1.Name = "btnAddImage1"
         Me.btnAddImage1.Size = New System.Drawing.Size(197, 44)
@@ -338,10 +342,10 @@ Partial Class FormManageBooks
         '
         Me.lblDateReleased1.AutoSize = True
         Me.lblDateReleased1.BackColor = System.Drawing.Color.Transparent
-        Me.lblDateReleased1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDateReleased1.Location = New System.Drawing.Point(48, 255)
+        Me.lblDateReleased1.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDateReleased1.Location = New System.Drawing.Point(41, 253)
         Me.lblDateReleased1.Name = "lblDateReleased1"
-        Me.lblDateReleased1.Size = New System.Drawing.Size(127, 19)
+        Me.lblDateReleased1.Size = New System.Drawing.Size(158, 24)
         Me.lblDateReleased1.TabIndex = 17
         Me.lblDateReleased1.Text = "Date Released:"
         '
@@ -351,10 +355,11 @@ Partial Class FormManageBooks
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblBookCover1.AutoSize = True
         Me.lblBookCover1.BackColor = System.Drawing.Color.Transparent
-        Me.lblBookCover1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBookCover1.Location = New System.Drawing.Point(334, 37)
+        Me.lblBookCover1.Font = New System.Drawing.Font("Poor Richard", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBookCover1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblBookCover1.Location = New System.Drawing.Point(324, 35)
         Me.lblBookCover1.Name = "lblBookCover1"
-        Me.lblBookCover1.Size = New System.Drawing.Size(108, 19)
+        Me.lblBookCover1.Size = New System.Drawing.Size(153, 31)
         Me.lblBookCover1.TabIndex = 15
         Me.lblBookCover1.Text = "Book Cover:"
         '
@@ -362,10 +367,10 @@ Partial Class FormManageBooks
         '
         Me.lblBookStatus1.AutoSize = True
         Me.lblBookStatus1.BackColor = System.Drawing.Color.Transparent
-        Me.lblBookStatus1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBookStatus1.Location = New System.Drawing.Point(48, 330)
+        Me.lblBookStatus1.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBookStatus1.Location = New System.Drawing.Point(43, 330)
         Me.lblBookStatus1.Name = "lblBookStatus1"
-        Me.lblBookStatus1.Size = New System.Drawing.Size(112, 19)
+        Me.lblBookStatus1.Size = New System.Drawing.Size(131, 24)
         Me.lblBookStatus1.TabIndex = 14
         Me.lblBookStatus1.Text = "Book Status:"
         '
@@ -373,10 +378,10 @@ Partial Class FormManageBooks
         '
         Me.lblGenre1.AutoSize = True
         Me.lblGenre1.BackColor = System.Drawing.Color.Transparent
-        Me.lblGenre1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGenre1.Location = New System.Drawing.Point(48, 183)
+        Me.lblGenre1.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGenre1.Location = New System.Drawing.Point(42, 183)
         Me.lblGenre1.Name = "lblGenre1"
-        Me.lblGenre1.Size = New System.Drawing.Size(63, 19)
+        Me.lblGenre1.Size = New System.Drawing.Size(78, 24)
         Me.lblGenre1.TabIndex = 13
         Me.lblGenre1.Text = "Genre:"
         '
@@ -384,10 +389,10 @@ Partial Class FormManageBooks
         '
         Me.lblAuthor1.AutoSize = True
         Me.lblAuthor1.BackColor = System.Drawing.Color.Transparent
-        Me.lblAuthor1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAuthor1.Location = New System.Drawing.Point(48, 111)
+        Me.lblAuthor1.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAuthor1.Location = New System.Drawing.Point(45, 111)
         Me.lblAuthor1.Name = "lblAuthor1"
-        Me.lblAuthor1.Size = New System.Drawing.Size(69, 19)
+        Me.lblAuthor1.Size = New System.Drawing.Size(84, 24)
         Me.lblAuthor1.TabIndex = 12
         Me.lblAuthor1.Text = "Author:"
         '
@@ -395,10 +400,10 @@ Partial Class FormManageBooks
         '
         Me.lblTitle1.AutoSize = True
         Me.lblTitle1.BackColor = System.Drawing.Color.Transparent
-        Me.lblTitle1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle1.Location = New System.Drawing.Point(48, 42)
+        Me.lblTitle1.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle1.Location = New System.Drawing.Point(45, 41)
         Me.lblTitle1.Name = "lblTitle1"
-        Me.lblTitle1.Size = New System.Drawing.Size(48, 19)
+        Me.lblTitle1.Size = New System.Drawing.Size(63, 24)
         Me.lblTitle1.TabIndex = 11
         Me.lblTitle1.Text = "Title:"
         '
@@ -408,8 +413,8 @@ Partial Class FormManageBooks
         Me.Guna2GradientPanel4.Controls.Add(Me.lblEditBooks1)
         Me.Guna2GradientPanel4.Controls.Add(Me.lblAddBooks1)
         Me.Guna2GradientPanel4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.Guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.Guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.Guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.Guna2GradientPanel4.Location = New System.Drawing.Point(0, 58)
         Me.Guna2GradientPanel4.Name = "Guna2GradientPanel4"
         Me.Guna2GradientPanel4.ShadowDecoration.Parent = Me.Guna2GradientPanel4
@@ -420,7 +425,7 @@ Partial Class FormManageBooks
         '
         Me.BackWindow1.BackColor = System.Drawing.Color.Transparent
         Me.BackWindow1.Image = Global.LoginNRegisterPage.My.Resources.Resources.BackWindow
-        Me.BackWindow1.Location = New System.Drawing.Point(11, 9)
+        Me.BackWindow1.Location = New System.Drawing.Point(22, 10)
         Me.BackWindow1.Name = "BackWindow1"
         Me.BackWindow1.Size = New System.Drawing.Size(66, 62)
         Me.BackWindow1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -431,10 +436,11 @@ Partial Class FormManageBooks
         '
         Me.lblEditBooks1.AutoSize = True
         Me.lblEditBooks1.BackColor = System.Drawing.Color.Transparent
-        Me.lblEditBooks1.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEditBooks1.Location = New System.Drawing.Point(258, 30)
+        Me.lblEditBooks1.Font = New System.Drawing.Font("Algerian", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEditBooks1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblEditBooks1.Location = New System.Drawing.Point(314, 33)
         Me.lblEditBooks1.Name = "lblEditBooks1"
-        Me.lblEditBooks1.Size = New System.Drawing.Size(104, 21)
+        Me.lblEditBooks1.Size = New System.Drawing.Size(180, 34)
         Me.lblEditBooks1.TabIndex = 30
         Me.lblEditBooks1.Text = "Edit Books"
         '
@@ -442,10 +448,11 @@ Partial Class FormManageBooks
         '
         Me.lblAddBooks1.AutoSize = True
         Me.lblAddBooks1.BackColor = System.Drawing.Color.Transparent
-        Me.lblAddBooks1.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAddBooks1.Location = New System.Drawing.Point(118, 30)
+        Me.lblAddBooks1.Font = New System.Drawing.Font("Algerian", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAddBooks1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lblAddBooks1.Location = New System.Drawing.Point(112, 33)
         Me.lblAddBooks1.Name = "lblAddBooks1"
-        Me.lblAddBooks1.Size = New System.Drawing.Size(105, 21)
+        Me.lblAddBooks1.Size = New System.Drawing.Size(176, 34)
         Me.lblAddBooks1.TabIndex = 29
         Me.lblAddBooks1.Text = "Add Books"
         '
@@ -522,15 +529,6 @@ Partial Class FormManageBooks
         Me.rtbDescription2.TabIndex = 46
         Me.rtbDescription2.Text = ""
         '
-        'pbPictureCover2
-        '
-        Me.pbPictureCover2.Location = New System.Drawing.Point(313, 72)
-        Me.pbPictureCover2.Name = "pbPictureCover2"
-        Me.pbPictureCover2.Size = New System.Drawing.Size(240, 332)
-        Me.pbPictureCover2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbPictureCover2.TabIndex = 45
-        Me.pbPictureCover2.TabStop = False
-        '
         'btAddImage2
         '
         Me.btAddImage2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -540,6 +538,15 @@ Partial Class FormManageBooks
         Me.btAddImage2.TabIndex = 44
         Me.btAddImage2.Text = "Add Image "
         Me.btAddImage2.UseVisualStyleBackColor = True
+        '
+        'pbPictureCover2
+        '
+        Me.pbPictureCover2.Location = New System.Drawing.Point(313, 72)
+        Me.pbPictureCover2.Name = "pbPictureCover2"
+        Me.pbPictureCover2.Size = New System.Drawing.Size(240, 332)
+        Me.pbPictureCover2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbPictureCover2.TabIndex = 45
+        Me.pbPictureCover2.TabStop = False
         '
         'lblBookCover2
         '
