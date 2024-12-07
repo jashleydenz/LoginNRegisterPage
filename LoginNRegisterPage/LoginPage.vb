@@ -190,13 +190,5 @@ Public Class LoginPage
                 End Select
 
                 Me.Hide()
-            Else
-
-            End If
-        Catch ex As Exception
-            MsgBox("mysql error: " & ex.Message)
-        Finally
-            con.Close()
-        End Try
     End Sub
 End Class
